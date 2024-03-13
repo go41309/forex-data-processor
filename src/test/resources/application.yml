@@ -1,0 +1,17 @@
+server:
+  port: 8080
+
+
+spring:
+  data:
+    mongodb:
+        host: localhost
+        port: 27017
+        database: forex
+  task:
+    scheduling:
+      cron: "0 0 18 * * *"
+
+forex:
+  daily-foreign-exchange-rate:
+    url: https://openapi.taifex.com.tw/v1/DailyForeignExchangeRates
